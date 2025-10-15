@@ -1,23 +1,14 @@
 {
     "builds": [
       {
-        "src": "manage.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
-      },
-      {
-        "src": "store/static/**",
-        "use": "@vercel/static"
+        "src": "karima_store/wsgi.py",
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
-        "src": "/static/(.*)",
-        "dest": "/store/static/$1"
-      },
-      {
         "src": "/(.*)",
-        "dest": "manage.py"
+        "dest": "karima_store/wsgi.py"
       }
     ]
   }
