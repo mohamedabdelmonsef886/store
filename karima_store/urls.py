@@ -24,6 +24,6 @@ urlpatterns = [
     path('', include('store.urls')),
 ]
 
-if settings.DEBUG:  # علشان ما يتنفذش غير أثناء التطوير
+if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    
+
