@@ -1,9 +1,23 @@
 {
     "builds": [
-      { "src": "karima_store/wsgi.py", "use": "@vercel/python" }
+      {
+        "src": "karima_store/wsgi.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "staticfiles/**/*",
+        "use": "@vercel/static"
+      }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "karima_store/wsgi.py" }
+      {
+        "src": "/static/(.*)",
+        "dest": "/staticfiles/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "karima_store/wsgi.py"
+      }
     ]
   }
   
