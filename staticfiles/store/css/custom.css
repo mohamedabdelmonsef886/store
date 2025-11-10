@@ -134,4 +134,33 @@ body {
   .hero .btn:hover {
     background-color: #0056b3;
   }
+  .contact-info {
+    display: flex;
+    left: 25px;
+    align-items: center;
+    gap: 8px; /* مسافة بين الأيقونة والرقم */
+    background-color: #f5f5f5; /* لون خفيف للخلفية (اختياري) */
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-info:hover {
+    background-color: #e2ffe9; /* لون عند المرور */
+}
+
+.whatsapp-icon {
+    fill: #25D366; /* لون أيقونة الواتساب */
+    width: 22px;
+    height: 22px;
+}
+
+.phone-number {
+    font-weight: bold;
+    color: #333;
+    direction: ltr; /* يخلي الرقم من اليسار لليمين */
+    font-size: 15px;
+}
+
+
   
