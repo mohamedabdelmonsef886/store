@@ -1179,8 +1179,9 @@ a.deletelink:focus, a.deletelink:hover {
     background-color: var(--body-bg);
 }
 .contact-info {
+    position: absolute;
     display: flex;
-    left: 25px;
+    left: 50%;
     align-items: center;
     gap: 8px; /* مسافة بين الأيقونة والرقم */
     background-color: #f5f5f5; /* لون خفيف للخلفية (اختياري) */
